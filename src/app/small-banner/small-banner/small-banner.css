@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+body{
+    margin: auto;
+}
+
+.smallBannerImg{
+    width: 100%;
+    height: 220px;
+}
+
+.imgB{
+    width: 100%;
+}
+
+.smContainer h1{
+    position: absolute;
+    top: 9%;
+    right: 5%;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 3rem;
+    font-weight: 600;
+    background: linear-gradient(90deg, #ffffff 29%, #999999 61%);
+    -webkit-background-clip: text;  /* recorta el degradado al texto */
+    -webkit-text-fill-color: transparent; /* hace el texto transparente */
+    background-clip: text;
+    color: transparent;
+}

@@ -1,0 +1,13 @@
+.contact-page {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.left {
+  min-width: 400px;
+}
+
+.right {
+  min-width: 400px;
+}

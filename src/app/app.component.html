@@ -1,0 +1,31 @@
+<nav [class.shadow]="isScrolled">
+  <!-- Logo -->
+  <div >
+    <a class="logo" [routerLink] = "['/home']" (mouseenter)="onLogoHover()" (mouseleave)="onLogoLeave()" #logoRef>
+      <img class="logoImg" [src]="logo" alt="" srcset="">
+    </a>
+  </div>
+  <!-- Opciones -->
+  <div>
+    <ul>
+      <li><a [routerLink] = "['/home']">Home</a></li>
+      <li><a [routerLink] = "['/familias']">Familias</a></li>
+      <li><a [routerLink] = "['/veterinarios']">Veterinarios</a></li>
+      <li><a href="#contact">Diagnósticos</a></li>
+      <li><a href="#contact">Sacar turno</a></li>
+    </ul>
+  </div>
+</nav>
+
+<router-outlet></router-outlet>
+
+<footer>
+  <div class="media">
+    <a href=""><img class="mediaIcon" [src]="igIcon" alt="" srcset=""></a>
+    <a href=""><img class="mediaIcon" [src]="wpIcon" alt="" srcset=""></a>
+    <a href=""><img class="mediaIcon" [src]="fcIcon" alt="" srcset=""></a>
+  </div>
+  <div class="logoFooterContainer">
+    <a href=""><img class="logoFooter" [src]="logoFooter" alt=""></a>
+  </div>
+</footer>

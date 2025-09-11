@@ -1,0 +1,44 @@
+.card{
+    background-color: rgba(255, 255, 255, 0.75);
+    width: 450px;
+    height: 330px;
+    padding-left: 50px;
+    padding-right: 50px;
+    align-content: center;
+    border-radius: 10px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    will-change: transform;
+    margin: 10px auto;
+}
+
+.card-content {
+    padding: 15px;
+    transform: translateZ(50px);
+    text-align: center;
+}
+
+.card:hover {
+    cursor: pointer;
+}
+
+
+.card .deco{
+    width: 100px;
+    height: 4px;
+    background-color: #7ACBCF;
+    justify-self: center;
+}
+
+.card p{
+    text-align: justify;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.card h2{
+    text-align: center;
+    font-weight: 500;
+    font-size: 24px;
+}

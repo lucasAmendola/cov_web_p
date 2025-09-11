@@ -1,0 +1,39 @@
+.special-section{
+    padding-top: 2%;
+    display: flex;
+    flex-direction: row;
+}
+
+.textContainer{
+    background-color: #f2f2f24f;
+    width: 45%;
+    text-align: left;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 3%;
+    gap: 1rem;
+}
+
+.paragraphs{
+
+    margin-left: -25px;
+}
+
+.titleAndDeco{
+    padding-bottom: 2%;
+}
+
+.decoTitle{
+    width: 165px;
+    height: 5px;
+    background-color: #7ACBCF;
+}
+
+.textContainer p{
+    max-width: 65%;
+}
+
+.special-section img{
+    width: 55%;
+}

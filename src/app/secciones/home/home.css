@@ -1,0 +1,16 @@
+.homeBanner{
+    background-image:url('../../assets/img/bannerHome.png');
+    width: 100%;
+    height: 500px;
+}
+
+.contactBG{
+    width: 100%;
+    background-repeat: no-repeat;
+    height: 700px;
+    background-image:url('../../assets/img/bgcontact.jpg');
+    background-color: rgba(0,0,0,0.35); /* color de oscurecimiento */
+    background-blend-mode: darken;     /* mezcla */
+    align-content: center;
+  
+}

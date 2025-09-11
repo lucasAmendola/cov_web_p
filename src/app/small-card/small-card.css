@@ -1,0 +1,19 @@
+.smallCard{
+    background-color: rgba(202, 202, 202, 0.35);
+    width: 300px;
+    height: 195px;
+    padding-left: 50px;
+    padding-right: 50px;
+    align-content: center;
+    margin: 10px auto;
+}
+
+.smallCard h2{
+    font-weight: 500;
+    font-size: 22px;
+}
+
+.smallCard p{
+    text-align: left;
+    font-size: 18px;
+}

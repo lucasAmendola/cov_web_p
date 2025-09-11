@@ -1,0 +1,27 @@
+<div class="contenedor">
+    
+  <h1>{{titulo}}</h1>
+
+  <div class="decoTitle"></div>
+
+  <p *ngIf="parrafo">{{ parrafo }}</p>
+
+  <div class="imgContainer">
+      <div *ngIf="foto">
+        <img [src]="foto" alt="Imagen ilustrativa" class="foto">
+      </div>
+    <div class="cardContainer">
+        <app-small-card titulo="Cercanía y confianza" texto="Muchas familias llegan a nuestra clínica 
+        recomendadas por otros tutores que ya recorrieron este camino con nosotros.">
+        </app-small-card>
+
+        <app-small-card titulo="Trabajo en equipo" texto="Colaboramos con veterinarios de cabecera 
+        para asegurar que cada paciente reciba la mejor atención oncológica posible.">
+        </app-small-card>
+
+        <app-small-card titulo="Alcance regional" texto="Atendemos pacientes de toda la provincia de Buenos Aires, brindando soporte oncológico especializado cerca de tu hogar.">
+        </app-small-card>
+    </div>
+  </div>
+  
+</div>

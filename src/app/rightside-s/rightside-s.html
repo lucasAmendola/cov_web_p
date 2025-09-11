@@ -1,0 +1,30 @@
+<div class="contenedor">
+    
+  <h1>{{titulo}}</h1>
+
+  <div class="decoTitle"></div>
+
+  <p *ngIf="parrafo">{{ parrafo }}</p>
+
+    <div class="orderContainer">
+
+        <div class="cardContainer">
+          <app-small-card titulo="Capacitación continua" texto="Compromiso activo con la formación de nuestro equipo y 
+            de veterinarios que buscan especializarse en oncología. ">
+          </app-small-card>
+          
+          <app-small-card titulo="Constancia  " texto="Desarrollamos  programas de capacitación estructurados para garantizar actualización profesional permanente.">
+          </app-small-card>
+    
+          <app-small-card titulo="Formando especialistas" texto="Somos formadores de la próxima generación de especialistas en áreas afines a la oncología veterinaria.">
+          </app-small-card>
+        </div>
+    
+        <div class="imgContainer">
+            <div *ngIf="foto">
+                <img [src]="foto" alt="Imagen ilustrativa" class="foto">
+            </div>
+        </div>
+        
+    </div>
+</div>

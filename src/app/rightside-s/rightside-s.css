@@ -1,0 +1,32 @@
+.contenedor{
+    margin-top: 2%;
+    text-align: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+}
+
+.imgContainer{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    justify-self: right;
+}
+.cardContainer{
+    display: flex;
+    flex-direction: column;
+    justify-self: left;
+}
+
+.decoTitle{
+    width: 150px;
+    height: 5px;
+    background-color: #7ACBCF;
+    margin-bottom: 2%;
+}
+
+.orderContainer{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}

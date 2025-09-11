@@ -1,0 +1,181 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+:root {
+  /* Colores principales */
+  --titulo: #000000;   
+  --color-primario: #7ACBCF; 
+  
+  /* Tipografía */
+  --font-family-base: 'Poppins', sans-serif;
+  --font-size-title: 2.3rem;
+  --font-size-paragraph: 1.2rem;
+}
+
+body{
+    margin: auto;
+}
+
+h2, h3, h4{
+    font-family: var(--font-family-base);
+}
+
+h1{
+    color: var(--titulo);
+    font-family: var(--font-family-base);
+    font-size:var(--font-size-title);
+    font-weight: 600;
+}
+
+p{
+    font-family: var(--font-family-base);
+    font-size: var(--font-size-paragraph);
+}
+
+.logoImg{
+    width: 18%;
+}
+
+.logo img {
+  transition: transform 0.4s ease, filter 0.4s ease;
+    will-change: transform, filter;
+}
+
+.logo:hover img {
+    transform: scale(1.05);
+    filter: drop-shadow(0 0 10px rgba(0, 102, 140, 0.3));
+}
+
+/* Keyframes para la animación de rebote */
+@keyframes logoBounce {
+    0%   { transform: scale(1); }
+    30%  { transform: scale(1.15) rotate(-3deg); }
+    50%  { transform: scale(0.95) rotate(3deg); }
+    70%  { transform: scale(1.1) rotate(-1deg); }
+    100% { transform: scale(1) rotate(0deg); }
+}
+
+
+nav {
+    display: flex;
+    flex-direction: row;
+    z-index: 1000;
+    justify-content: space-between; /* empuja logo y menú a extremos */
+    align-items: center; /* centra verticalmente */
+    position: fixed;
+    width: 100%; /* ocupa todo el ancho */
+    top: 0;
+    left: 0;
+    background-color: white; /* opcional, para que no quede transparente */
+    padding: 10px 100px;
+    box-sizing: border-box;
+    transition: box-shadow .25s ease;
+}
+
+nav.shadow {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 70px; /* separa opciones */
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a{
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 18px;
+    white-space: nowrap;
+}
+
+nav ul li a:hover{
+    color: #00668C;
+    border-bottom: solid 1px #00668C;
+}
+
+footer{
+    background-color: #3ea3c8ac;
+    bottom: 0;
+    left: 0;
+    height: 150px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; /* empuja logo y menú a extremos */
+    align-items:end; /* centra verticalmente */
+}
+
+.logoFooterContainer{
+    padding-right: 4%;
+    padding-bottom: 1%;
+}
+
+.logoFooter{
+  width: 300px;
+}
+
+.media{
+   padding-left: 4%;
+  
+}
+
+.mediaIcon{
+    width: 28px;
+    margin: 15px;
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 1024px) {
+    nav ul {
+        gap: 25px;
+    }
+
+    nav ul li a {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    nav {
+        padding: 10px 20px;
+    }
+
+    nav ul {
+        gap: 20px;
+    }
+
+    nav ul li a {
+        font-size: 18px; /* más grande en móvil para mejor legibilidad */
+    }
+}
+
+.section1{
+    padding-top: 1%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align:justify;
+    align-items: center;
+}
+
+.titleContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.decoTitle{
+    width: 150px;
+    height: 5px;
+    background-color: #7ACBCF;
+}
+
+.section1 p{
+    width: 50%;
+}
