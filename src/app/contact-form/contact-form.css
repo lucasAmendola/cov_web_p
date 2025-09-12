@@ -11,6 +11,7 @@
   border-radius: 20px;
   border-bottom-left-radius: 0px;
   border-top-left-radius: 0px;
+   flex-wrap: wrap;
 }
 
 .form-group {

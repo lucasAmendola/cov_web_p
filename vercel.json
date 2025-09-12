@@ -5,7 +5,7 @@
       "src": "package.json",
       "use": "@vercel/static-build",
       "config": {
-        "distDir": "dist/cov_web/browser"
+        "distDir": "dist/cov_web"
       }
     }
   ],
