@@ -9,47 +9,21 @@
       }
     }
   ],
-  "routes": [
-    {
-      "src": "^/assets/(.*)$",
-      "dest": "/assets/$1"
-    },
-    {
-      "src": "^/(?!.*\\.).*(js|css|json|webmanifest)$",
-      "headers": {
-        "cache-control": "public, max-age=0, must-revalidate"
-      },
-      "continue": true
-    },
-    {
-      "src": ".*\\.js$",
-      "headers": {
-        "Content-Type": "application/javascript"
-      },
-      "continue": true
-    },
-    {
-      "src": "/(.*)",
-      "dest": "/index.html"
-    }
+  "rewrites": [
+    { "source": "/assets/(.*)", "destination": "/assets/$1" },
+    { "source": "/(.*)", "destination": "/" }
   ],
   "headers": [
     {
       "source": "/(.*)\\.js",
       "headers": [
-        {
-          "key": "Content-Type",
-          "value": "application/javascript"
-        }
+        { "key": "Content-Type", "value": "application/javascript" }
       ]
     },
     {
       "source": "/(.*)\\.css",
       "headers": [
-        {
-          "key": "Content-Type",
-          "value": "text/css"
-        }
+        { "key": "Content-Type", "value": "text/css" }
       ]
     }
   ]
