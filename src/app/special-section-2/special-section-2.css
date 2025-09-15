@@ -46,7 +46,7 @@
     .bgSection{
         background-repeat: no-repeat;
         background-size: cover;
-        height: 768px;
+        max-height: 768px;
     }
     .bgSection h1{
         font-weight: 700;
@@ -61,7 +61,7 @@
     .bgSection{
         background-repeat: no-repeat;
         background-size: cover;
-        height: 901;
+        max-height: 900px;
     }
     .bgSection h1{
         font-weight: 700;
