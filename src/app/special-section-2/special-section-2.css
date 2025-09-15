@@ -42,7 +42,7 @@
 }
 
 
-@media screen and (min-width: 1366px) {
+@media screen and (min-width: 1367px) {
     .bgSection{
         background-repeat: no-repeat;
         background-size: cover;
@@ -57,7 +57,7 @@
     }
 }
 
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1601px) {
     .bgSection{
         background-repeat: no-repeat;
         background-size: cover;
