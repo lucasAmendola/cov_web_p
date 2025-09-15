@@ -40,3 +40,34 @@
     align-self: center;
     margin-top: -2%;
 }
+
+
+@media screen and (min-width: 1366px) {
+    .bgSection{
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 768px;
+    }
+    .bgSection h1{
+        font-weight: 700;
+        font-size: 40px;
+    }
+    .bgSection p{
+        font-size: 15px;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    .bgSection{
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 901;
+    }
+    .bgSection h1{
+        font-weight: 700;
+        font-size: 45px;
+    }
+    .bgSection p{
+        font-size: 18px;
+    }
+}

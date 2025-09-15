@@ -37,3 +37,15 @@
 .special-section img{
     width: 55%;
 }
+
+@media screen and (min-width: 1366px) {
+    .special-section{
+       max-height: 768px;
+    }
+
+}
+@media screen and (min-width: 1600px) {
+    .special-section{
+        max-height: 900px;
+    }
+}

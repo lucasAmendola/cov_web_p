@@ -8,8 +8,17 @@
   
   /* Tipografía */
   --font-family-base: 'Poppins', sans-serif;
-  --font-size-title: 2.3rem;
-  --font-size-paragraph: 1.2rem;
+  --font-size-title: clamp(1.8rem, 4vw, 2.3rem);
+  --font-size-paragraph: clamp(1rem, 2vw, 1.2rem);
+  
+  /* Espaciado */
+  --spacing-sm: clamp(0.5rem, 1vw, 1rem);
+  --spacing-md: clamp(1rem, 2vw, 2rem);
+  --spacing-lg: clamp(2rem, 4vw, 4rem);
+  
+  /* Alturas responsivas */
+  --banner-height: clamp(300px, 50vh, 500px);
+  --contact-height: clamp(400px, 70vh, 700px);
 }
 
 body{

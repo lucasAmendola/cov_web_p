@@ -2,29 +2,43 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 .contact-container {
-  max-width: 400px;
-  min-height: 480px;
-  max-height: 480px;
+  width: 100%;
+  max-width: clamp(280px, 90vw, 400px);
+  min-height: auto;
   background-color: white;
-  padding: 30px;
-  padding-left: 25px;
+  padding: var(--spacing-md);
   border-radius: 20px;
   border-bottom-left-radius: 0px;
   border-top-left-radius: 0px;
-   flex-wrap: wrap;
+  flex-wrap: wrap;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .form-group {
-  margin-bottom: 15px;
+  margin-bottom: var(--spacing-md);
   display: flex;
   flex-direction: column;
-  font-family: 'Poppins', sans-serif;
+  font-family: var(--font-family-base);
+}
+
+.form-group label {
+  font-size: var(--font-size-paragraph);
+  margin-bottom: var(--spacing-sm);
 }
 
 input, select, button {
-  padding: 8px;
-  font-size: 14px;
+  padding: var(--spacing-sm);
+  font-size: var(--font-size-paragraph);
   border-radius: 10px;
+  border: 1px solid #ddd;
+  width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .contact-container {
+    border-radius: 20px;
+    margin: var(--spacing-md) auto;
+  }
 }
 
 button {
