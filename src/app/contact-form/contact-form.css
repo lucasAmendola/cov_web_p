@@ -1,21 +1,16 @@
-/* You can add global styles to this file, and also import other style files */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
-
 .contact-container {
-  width: 100%;
-  max-width: clamp(280px, 90vw, 400px);
-  min-height: auto;
+  flex: 1; /* ocupa el mismo espacio que el info-container */
+  max-width: 400px;
   background-color: white;
-  padding: var(--spacing-md);
   border-radius: 20px;
   border-bottom-left-radius: 0px;
   border-top-left-radius: 0px;
-  flex-wrap: wrap;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box; /* evita que el padding sume al ancho */
 }
 
 .form-group {
-  margin-bottom: var(--spacing-md);
+  margin-bottom: 1%;
   display: flex;
   flex-direction: column;
   font-family: var(--font-family-base);
@@ -23,7 +18,6 @@
 
 .form-group label {
   font-size: var(--font-size-paragraph);
-  margin-bottom: var(--spacing-sm);
 }
 
 input, select, button {
@@ -58,37 +52,39 @@ button:disabled {
 @media screen and (min-width: 901px) and (max-width: 1280px) {
   .contact-container {
     max-width: 500px;
-    padding: var(--spacing-lg);
+    min-height: 500px;
   }
 }
 
 /* Laptops grandes y desktops comunes (1281px – 1600px) */
 @media screen and (min-width: 1281px) and (max-width: 1600px) {
   .contact-container {
-    max-width: 600px;
-    padding: var(--spacing-lg);
+    max-width: 550px;
+    min-height: 520px;
   }
 }
 
 /* Monitores grandes (1601px – 1920px) */
 @media screen and (min-width: 1601px) and (max-width: 1920px) {
   .contact-container {
-    max-width: 700px;
-    padding: var(--spacing-xl);
+    max-width: 600px;
+    min-height: 550px;
   }
 }
 
 /* 2K y 4K (1921px en adelante) */
 @media screen and (min-width: 1921px) {
   .contact-container {
-    max-width: 800px;
-    padding: var(--spacing-xl);
+    max-width: 700px;
+    min-height: 600px;
   }
 }
 
+/* Mobile (hasta 768px) */
 @media screen and (max-width: 768px) {
   .contact-container {
     border-radius: 20px;
     margin: var(--spacing-md) auto;
+    max-width: 90%; /* ocupa casi todo el ancho en mobile */
   }
 }

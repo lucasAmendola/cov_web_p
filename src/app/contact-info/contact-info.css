@@ -1,16 +1,63 @@
 .info-container {
+  flex: 1; /* ocupa el mismo alto que el otro lado */
   max-width: 400px;
   min-height: 480px;
-  max-height: 480px;
-  background-color: white;
-  padding: 30px;
+  background-color: rgb(255, 255, 255);
   border-radius: 20px;
   border-bottom-right-radius: 0px;
   border-top-right-radius: 0px;
-  padding-right: 30px;
+  box-sizing: border-box;
 }
 
 p {
   margin: 8px 0;
   font-size: 18px;
+}
+
+/* Laptops chicas (901px – 1280px) */
+@media screen and (min-width: 901px) and (max-width: 1280px) {
+  .info-container {
+    max-width: 500px;
+    min-height: 500px;
+    padding: 35px;
+  }
+  p {
+    font-size: 19px;
+  }
+}
+
+/* Laptops grandes y desktops comunes (1281px – 1600px) */
+@media screen and (min-width: 1281px) and (max-width: 1600px) {
+  .info-container {
+    max-width: 550px;
+    min-height: 520px;
+    padding: 40px;
+  }
+  p {
+    font-size: 20px;
+  }
+}
+
+/* Monitores grandes (1601px – 1920px) */
+@media screen and (min-width: 1601px) and (max-width: 1920px) {
+  .info-container {
+    max-width: 600px;
+    min-height: 550px;
+    padding: 45px;
+  }
+  p {
+    font-size: 21px;
+  }
+}
+
+/* 2K y 4K (1921px en adelante) */
+@media screen and (min-width: 1921px) {
+  .info-container {
+    max-width: 700px;
+    min-height: 600px;
+    padding: 50px;
+  }
+  p {
+    font-size: 22px;
+  }
 }

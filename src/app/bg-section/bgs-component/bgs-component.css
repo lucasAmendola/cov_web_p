@@ -33,3 +33,51 @@
 @media (max-width: 640px){
   .cardsContainer{ grid-template-columns: 1fr; }
 }
+
+/* Laptops chicas (901px – 1280px) */
+@media screen and (min-width: 901px) and (max-width: 1280px) {
+  .bgSection {
+    height: 750px;
+    background-size: cover;
+  }
+  .cardsContainer {
+    max-width: 1000px;
+    gap: 30px;
+  }
+}
+
+/* Laptops grandes y desktops comunes (1281px – 1600px) */
+@media screen and (min-width: 1281px) and (max-width: 1600px) {
+  .bgSection {
+    height: 850px;
+    background-size: cover;
+  }
+  .cardsContainer {
+    max-width: 1100px;
+    gap: 35px;
+  }
+}
+
+/* Monitores grandes (1601px – 1920px) */
+@media screen and (min-width: 1601px) and (max-width: 1920px) {
+  .bgSection {
+    height: 950px;
+    background-size: cover;
+  }
+  .cardsContainer {
+    max-width: 1300px;
+    gap: 40px;
+  }
+}
+
+/* 2K y 4K (1921px en adelante) */
+@media screen and (min-width: 1921px) {
+  .bgSection {
+    height: 1100px;
+    background-size: cover;
+  }
+  .cardsContainer {
+    max-width: 1500px;
+    gap: 50px;
+  }
+}
