@@ -42,22 +42,21 @@
 }
 
 
-@media screen and (min-width: 1367px) {
+@media screen and (min-width: 1367px) and (max-width: 1600px){
     .bgSection{
         background-repeat: no-repeat;
         background-size: cover;
         max-height: 768px;
     }
-    .bgSection h1{
-        font-weight: 700;
-        font-size: 40px;
+    .bgSection h1 {
+        font-size: clamp(28px, 4vw, 45px);
     }
-    .bgSection p{
-        font-size: 15px;
+    .bgSection p {
+        font-size: clamp(14px, 1.5vw, 18px);
     }
 }
 
-@media screen and (min-width: 1601px) {
+@media screen and (min-width: 1601px)  and (max-width: 1920px){
     .bgSection{
         background-repeat: no-repeat;
         background-size: cover;

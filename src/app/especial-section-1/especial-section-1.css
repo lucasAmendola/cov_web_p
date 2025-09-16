@@ -34,9 +34,11 @@
     max-width: 65%;
 }
 
-.special-section img{
-    width: 55%;
+.special-section img {
+  width: 55%;
+  object-fit: cover; /* rellena el espacio sin deformarse */
 }
+
 
 @media screen and (min-width: 1366px) {
     .special-section{
@@ -48,4 +50,59 @@
     .special-section{
         max-height: 900px;
     }
+}
+
+/* Laptops chicas (901px – 1280px) */
+@media screen and (min-width: 901px) and (max-width: 1280px) {
+  .special-section {
+    flex-direction: row;
+    max-height: 650px;
+  }
+  .textContainer {
+    width: 50%;
+    padding-left: 2%;
+  }
+  .special-section img {
+    width: 50%;
+  }
+}
+
+/* Laptops comunes (1281px – 1365px) */
+@media screen and (min-width: 1281px) and (max-width: 1365px) {
+  .special-section {
+    max-height: 720px;
+  }
+  .textContainer {
+    width: 48%;
+  }
+  .special-section img {
+    width: 52%;
+  }
+}
+
+/* Laptops grandes (1366px – 1600px) */
+@media screen and (min-width: 1366px) and (max-width: 1600px) {
+  .special-section {
+    max-height: 768px;
+  }
+}
+
+/* Monitores grandes (1601px – 1920px) */
+@media screen and (min-width: 1601px) and (max-width: 1920px) {
+  .special-section {
+    max-height: 900px;
+  }
+}
+
+/* 2K y 4K (1921px en adelante) */
+@media screen and (min-width: 1921px) {
+  .special-section {
+    max-height: 1100px;
+  }
+  .textContainer {
+    width: 40%;
+  }
+  .special-section img {
+    width: 60%;
+  }
 }

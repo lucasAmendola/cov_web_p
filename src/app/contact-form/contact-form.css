@@ -34,13 +34,6 @@ input, select, button {
   width: 100%;
 }
 
-@media screen and (max-width: 768px) {
-  .contact-container {
-    border-radius: 20px;
-    margin: var(--spacing-md) auto;
-  }
-}
-
 button {
   background: #007bff;
   color: white;
@@ -59,4 +52,43 @@ button:disabled {
 .error {
   color: red;
   font-size: 12px;
+}
+
+/* Laptops chicas (901px – 1280px) */
+@media screen and (min-width: 901px) and (max-width: 1280px) {
+  .contact-container {
+    max-width: 500px;
+    padding: var(--spacing-lg);
+  }
+}
+
+/* Laptops grandes y desktops comunes (1281px – 1600px) */
+@media screen and (min-width: 1281px) and (max-width: 1600px) {
+  .contact-container {
+    max-width: 600px;
+    padding: var(--spacing-lg);
+  }
+}
+
+/* Monitores grandes (1601px – 1920px) */
+@media screen and (min-width: 1601px) and (max-width: 1920px) {
+  .contact-container {
+    max-width: 700px;
+    padding: var(--spacing-xl);
+  }
+}
+
+/* 2K y 4K (1921px en adelante) */
+@media screen and (min-width: 1921px) {
+  .contact-container {
+    max-width: 800px;
+    padding: var(--spacing-xl);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contact-container {
+    border-radius: 20px;
+    margin: var(--spacing-md) auto;
+  }
 }

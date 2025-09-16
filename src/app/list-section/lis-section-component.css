@@ -28,17 +28,58 @@ li {
     }
 }
 
-@media screen and (min-width: 901px) {
-    .bgSection{
-        background-repeat: no-repeat;
+/* Laptops chicas (901px – 1280px) */
+@media screen and (min-width: 901px) and (max-width: 1280px) {
+    .bgSection {
         background-size: cover;
-        height: 901;
+        height: 750px;
     }
-    .bgSection h1{
-        font-weight: 700;
+    .bgSection h1 {
+        font-size: 40px;
+    }
+    .bgSection p {
+        font-size: 17px;
+    }
+}
+
+/* Laptops comunes y desktops (1281px – 1600px) */
+@media screen and (min-width: 1281px) and (max-width: 1600px) {
+    .bgSection {
+        background-size: cover;
+        height: 900px;
+    }
+    .bgSection h1 {
         font-size: 45px;
     }
-    .bgSection p{
+    .bgSection p {
         font-size: 18px;
+    }
+}
+
+/* Monitores grandes (1601px – 1920px) */
+@media screen and (min-width: 1601px) and (max-width: 1920px) {
+    .bgSection {
+        background-size: cover;
+        height: 1000px;
+    }
+    .bgSection h1 {
+        font-size: 50px;
+    }
+    .bgSection p {
+        font-size: 20px;
+    }
+}
+
+/* 2K y 4K (más de 1920px) */
+@media screen and (min-width: 1921px) {
+    .bgSection {
+        background-size: cover;
+        height: 1200px;
+    }
+    .bgSection h1 {
+        font-size: 60px;
+    }
+    .bgSection p {
+        font-size: 22px;
     }
 }
