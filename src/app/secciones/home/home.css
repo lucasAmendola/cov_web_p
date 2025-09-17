@@ -10,12 +10,11 @@
 .contactBG {
     width: 100%;
     background-repeat: no-repeat;
-    height: var(--contact-height);
     background-image: url('/assets/img/bgcontact.jpg');
     background-color: rgba(0,0,0,0.35);
     background-blend-mode: darken;
     align-content: center;
     background-size: cover;
     background-position: center;
-    padding: var(--spacing-md);
+    padding-bottom: 2%; padding-top: 2%;
 }

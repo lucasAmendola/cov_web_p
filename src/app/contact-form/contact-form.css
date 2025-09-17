@@ -1,16 +1,16 @@
 .contact-container {
-  flex: 1; /* ocupa el mismo espacio que el info-container */
-  max-width: 400px;
   background-color: white;
   border-radius: 20px;
   border-bottom-left-radius: 0px;
   border-top-left-radius: 0px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   box-sizing: border-box; /* evita que el padding sume al ancho */
+  align-items: center;
+  justify-content: center;
+  align-content: center;
 }
 
 .form-group {
-  margin-bottom: 1%;
   display: flex;
   flex-direction: column;
   font-family: var(--font-family-base);
@@ -21,18 +21,18 @@
 }
 
 input, select, button {
-  padding: var(--spacing-sm);
+  padding: 4%;
   font-size: var(--font-size-paragraph);
   border-radius: 10px;
   border: 1px solid #ddd;
-  width: 100%;
 }
 
 button {
-  background: #007bff;
+  background: #0658b1;
   color: white;
   border: none;
   cursor: pointer;
+  width: 100%;
 }
 
 button:hover {
