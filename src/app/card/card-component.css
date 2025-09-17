@@ -1,9 +1,7 @@
 .card {
     background-color: rgba(255, 255, 255, 0.75);
-
-    min-height: 100px;
-    height: auto;
-    padding: var(--spacing-md);
+    max-height: auto;
+    min-width: 400px;
     align-content: center;
     border-radius: 10px;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
@@ -16,11 +14,11 @@
 .card-content {
     transform: translateZ(50px);
     text-align: center;
+
 }
 
 .card-content h3 {
     font-size: var(--font-size-title);
-    margin-bottom: var(--spacing-sm);
 }
 
 .card-content p {
@@ -51,4 +49,60 @@
     text-align: center;
     font-weight: 500;
     font-size: 24px;
+}
+
+/* Laptops chicas (901px – 1280px) */
+@media screen and (min-width: 901px) and (max-width: 1280px) {
+  .card {
+    min-width: 330px;
+    padding: 15px;
+  }
+  .card h2 {
+    font-size: 20px;
+  }
+  .card p {
+    font-size: 14px;
+  }
+}
+
+/* Laptops grandes y desktops comunes (1281px – 1600px) */
+@media screen and (min-width: 1281px) and (max-width: 1600px) {
+  .card {
+    min-width: 370px;
+    padding: 18px;
+  }
+  .card h2 {
+    font-size: 22px;
+  }
+  .card p {
+    font-size: 15px;
+  }
+}
+
+/* Monitores grandes (1601px – 1920px) */
+@media screen and (min-width: 1601px) and (max-width: 1920px) {
+  .card {
+    min-width: 400px;
+    padding: 20px;
+  }
+  .card h2 {
+    font-size: 23px;
+  }
+  .card p {
+    font-size: 15.5px;
+  }
+}
+
+/* 2K y 4K (1921px en adelante) */
+@media screen and (min-width: 1921px) {
+  .card {
+    min-width: 500px;
+    padding: 28px;
+  }
+  .card h2 {
+    font-size: 28px;
+  }
+  .card p {
+    font-size: 18px;
+  }
 }
