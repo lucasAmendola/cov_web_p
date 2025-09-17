@@ -40,27 +40,23 @@
 }
 
 
-@media screen and (min-width: 1366px) {
-    .special-section{
-       max-height: 768px;
-    }
-
-}
-@media screen and (min-width: 1600px) {
-    .special-section{
-        max-height: 900px;
-    }
-}
-
 /* Laptops chicas (901px – 1280px) */
 @media screen and (min-width: 901px) and (max-width: 1280px) {
   .special-section {
     flex-direction: row;
-    max-height: 650px;
+    max-height: 620px;
   }
   .textContainer {
     width: 50%;
-    padding-left: 2%;
+    padding-left: 1.5%;
+    gap: 0.8rem;
+  }
+  .textContainer p {
+    max-width: 70%;
+    font-size: 14px;
+  }
+  .titleAndDeco {
+    padding-bottom: 1.5%;
   }
   .special-section img {
     width: 50%;
@@ -70,10 +66,16 @@
 /* Laptops comunes (1281px – 1365px) */
 @media screen and (min-width: 1281px) and (max-width: 1365px) {
   .special-section {
-    max-height: 720px;
+    max-height: 700px;
   }
   .textContainer {
     width: 48%;
+    padding-left: 2%;
+    gap: 0.9rem;
+  }
+  .textContainer p {
+    max-width: 68%;
+    font-size: 15px;
   }
   .special-section img {
     width: 52%;
@@ -83,14 +85,36 @@
 /* Laptops grandes (1366px – 1600px) */
 @media screen and (min-width: 1366px) and (max-width: 1600px) {
   .special-section {
-    max-height: 768px;
+    max-height: 760px;
+  }
+  .textContainer {
+    width: 47%;
+    padding-left: 2%;
+  }
+  .textContainer p {
+    max-width: 66%;
+    font-size: 15.5px;
+  }
+  .special-section img {
+    width: 53%;
   }
 }
 
 /* Monitores grandes (1601px – 1920px) */
 @media screen and (min-width: 1601px) and (max-width: 1920px) {
   .special-section {
-    max-height: 900px;
+    max-height: 880px;
+  }
+  .textContainer {
+    width: 45%;
+    padding-left: 2.5%;
+  }
+  .textContainer p {
+    max-width: 65%;
+    font-size: 16px;
+  }
+  .special-section img {
+    width: 55%;
   }
 }
 
@@ -101,8 +125,15 @@
   }
   .textContainer {
     width: 40%;
+    padding-left: 3%;
+    gap: 1.2rem;
+  }
+  .textContainer p {
+    max-width: 60%;
+    font-size: 18px;
   }
   .special-section img {
     width: 60%;
   }
 }
+
