@@ -30,56 +30,81 @@ li {
 
 /* Laptops chicas (901px – 1280px) */
 @media screen and (min-width: 901px) and (max-width: 1280px) {
-    .bgSection {
-        background-size: cover;
-        height: 750px;
-    }
-    .bgSection h1 {
-        font-size: 40px;
-    }
-    .bgSection p {
-        font-size: 17px;
-    }
+  .list {
+    max-width: 900px;
+    padding: var(--spacing-sm);
+  }
+
+  .list ul {
+    gap: calc(var(--spacing-sm) * 0.8);
+    padding-left: clamp(15px, 4%, 40px);
+  }
+
+  li {
+    font-size: calc(var(--font-size-paragraph) * 0.9);
+  }
 }
 
-/* Laptops comunes y desktops (1281px – 1600px) */
-@media screen and (min-width: 1281px) and (max-width: 1600px) {
-    .bgSection {
-        background-size: cover;
-        height: 900px;
-    }
-    .bgSection h1 {
-        font-size: 45px;
-    }
-    .bgSection p {
-        font-size: 18px;
-    }
+/* Laptops comunes (1281px – 1365px) */
+@media screen and (min-width: 1281px) and (max-width: 1365px) {
+  .list {
+    max-width: 1000px;
+    padding: var(--spacing-md);
+  }
+
+  li {
+    font-size: calc(var(--font-size-paragraph) * 0.95);
+  }
+}
+
+/* Laptops grandes (1366px – 1600px) */
+@media screen and (min-width: 1366px) and (max-width: 1600px) {
+  .list {
+    max-width: 1100px;
+  }
+
+  li {
+    font-size: var(--font-size-paragraph);
+  }
 }
 
 /* Monitores grandes (1601px – 1920px) */
 @media screen and (min-width: 1601px) and (max-width: 1920px) {
-    .bgSection {
-        background-size: cover;
-        height: 1000px;
-    }
-    .bgSection h1 {
-        font-size: 50px;
-    }
-    .bgSection p {
-        font-size: 20px;
-    }
+  .list {
+    max-width: 1200px;
+  }
+
+  li {
+    font-size: calc(var(--font-size-paragraph) * 1.05);
+  }
 }
 
-/* 2K y 4K (más de 1920px) */
+/* 2K y 4K (1921px en adelante) */
 @media screen and (min-width: 1921px) {
-    .bgSection {
-        background-size: cover;
-        height: 1200px;
-    }
-    .bgSection h1 {
-        font-size: 60px;
-    }
-    .bgSection p {
-        font-size: 22px;
-    }
+  .list {
+    max-width: 1400px;
+  }
+
+  li {
+    font-size: calc(var(--font-size-paragraph) * 1.1);
+    line-height: 1.6;
+  }
+}
+
+/* Tablets y móviles (max 900px) */
+@media screen and (max-width: 900px) {
+  .list {
+    max-width: 100%;
+    padding: var(--spacing-sm);
+  }
+
+  .list ul {
+    padding-left: 15px;
+    gap: var(--spacing-sm);
+  }
+
+  li {
+    font-size: calc(var(--font-size-paragraph) * 0.85);
+    line-height: 1.4;
+  }
 }
