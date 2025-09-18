@@ -24,6 +24,12 @@
 
 /* Laptops chicas (901px – 1280px) */
 @media screen and (min-width: 901px) and (max-width: 1280px) {
+  .contenedor{
+    text-align: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+  }
   .imgContainer {
     flex-wrap: wrap; /* si no entran, bajan de línea */
     gap: 20px;

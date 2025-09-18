@@ -27,3 +27,81 @@ body{
     background-clip: text;
     color: transparent;
 }
+
+/* Laptops chicas (901px – 1280px) */
+@media screen and (min-width: 901px) and (max-width: 1280px) {
+  .smallBannerImg {
+    height: 180px;
+  }
+
+  .smContainer h1 {
+    font-size: 2.2rem;
+    top: 8%;
+    right: 4%;
+  }
+}
+
+/* Laptops comunes (1281px – 1365px) */
+@media screen and (min-width: 1281px) and (max-width: 1365px) {
+  .smallBannerImg {
+    height: 200px;
+  }
+
+  .smContainer h1 {
+    font-size: 2.5rem;
+    top: 8.5%;
+    right: 4.5%;
+  }
+}
+
+/* Laptops grandes (1366px – 1600px) */
+@media screen and (min-width: 1366px) and (max-width: 1600px) {
+  .smallBannerImg {
+    height: 220px;
+  }
+
+  .smContainer h1 {
+    font-size: 2.8rem;
+    top: 9%;
+    right: 5%;
+  }
+}
+
+/* Monitores grandes (1601px – 1920px) */
+@media screen and (min-width: 1601px) and (max-width: 1920px) {
+  .smallBannerImg {
+    height: 260px;
+  }
+
+  .smContainer h1 {
+    font-size: 3rem;
+    top: 9%;
+    right: 5%;
+  }
+}
+
+/* 2K y 4K (1921px en adelante) */
+@media screen and (min-width: 1921px) {
+  .smallBannerImg {
+    height: 300px;
+  }
+
+  .smContainer h1 {
+    font-size: 3.5rem;
+    top: 10%;
+    right: 6%;
+  }
+}
+
+/* Tablets y móviles (max 900px) */
+@media screen and (max-width: 900px) {
+  .smallBannerImg {
+    height: 150px;
+  }
+
+  .smContainer h1 {
+    font-size: 1.8rem;
+    top: 7%;
+    right: 3%;
+  }
+}
