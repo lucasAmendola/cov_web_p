@@ -1,17 +1,24 @@
 .contact-page {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: start;
-    align-content: start;
-    padding: 5%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: stretch; /* 🔑 Fuerza que ambas columnas tengan la misma altura */
+  padding-left: 15%;
+  padding-right: 15%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  gap: 20px; /* opcional: espacio entre columnas */
 }
 
-.left {
-    min-width: 400px;
+.left,
+.right {
+  max-width: 500px;
+  flex: 1; /* 🔑 Ambas crecen proporcionalmente */
+  background: white; /* opcional, para visualizar mejor */
+  border-radius: 10px; /* opcional */
+  padding: 20px; /* opcional */
+  align-content: center;
+  align-items: center;
+  justify-content: center;
 }
 
-  .right {
-    min-width: 400px;
-
-}

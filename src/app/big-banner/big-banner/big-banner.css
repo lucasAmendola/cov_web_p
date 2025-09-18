@@ -1,16 +1,51 @@
-.bigBanner{
-    width: 100%;
-    height: 600px;
+.bigBanner {
+  width: 100%;
+  height: 600px;
+
+  /* Imagen de fondo */
+  background-size: contain;   /* Siempre completa */
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
-@media screen and (min-width: 1366px) {
-    .bigBanner{
-        max-height: 768px;
-    }
+/* Tablets y móviles (max 900px) */
+@media screen and (max-width: 900px) {
+  .bigBanner {
+    height: 300px;
+  }
 }
 
-@media screen and (min-width: 1600px) {
-    .bigBanner{
-        max-height: 900px;
-    }
+/* Laptops chicas (901px – 1280px) */
+@media screen and (min-width: 901px) and (max-width: 1280px) {
+  .bigBanner {
+    height: 450px;
+  }
+}
+
+/* Laptops comunes (1281px – 1365px) */
+@media screen and (min-width: 1281px) and (max-width: 1365px) {
+  .bigBanner {
+    height: 550px;
+  }
+}
+
+/* Laptops grandes (1366px – 1600px) */
+@media screen and (min-width: 1366px) and (max-width: 1600px) {
+  .bigBanner {
+    max-height: 768px;
+  }
+}
+
+/* Monitores grandes (1601px – 1920px) */
+@media screen and (min-width: 1601px) and (max-width: 1920px) {
+  .bigBanner {
+    max-height: 900px;
+  }
+}
+
+/* 2K y 4K (1921px en adelante) */
+@media screen and (min-width: 1921px) {
+  .bigBanner {
+    max-height: 1100px;
+  }
 }
