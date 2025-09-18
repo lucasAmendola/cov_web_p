@@ -9,12 +9,13 @@
     perspective: 1000px;
     will-change: transform;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+   
 }
 
 .card-content {
     transform: translateZ(50px);
     text-align: center;
-
+    padding-left: 5%; padding-right: 5%;
 }
 
 .card-content h3 {
