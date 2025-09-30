@@ -1,0 +1,85 @@
+.medicImg {
+    width: 300px;
+    height: 400px;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+h2 {
+    font-weight: 500;
+    font-size: x-large;
+}
+
+.medicContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: clamp(8px, 2vw, 20px);
+  padding: clamp(10px, 2vw, 20px) clamp(5%, 8vw, 10%);
+  background-color: #ffffff;
+  flex-wrap: nowrap; /* por defecto, fila siempre */
+  opacity: 0;
+  transition: all 0.8s ease-out;
+}
+
+/* Desde la izquierda */
+.medicContainer.left {
+  transform: translateX(-100px);
+}
+.medicContainer.left.show {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Desde la derecha */
+.medicContainer.right {
+  transform: translateX(100px);
+}
+.medicContainer.right.show {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Fondos intercalados */
+.medicContainer.bg-light {
+  background-color: #f0f0f0b9;
+}
+
+.medicContainer.bg-dark {
+  background-color: #ffffff; /* más oscuro */
+}
+
+/* Pantallas chicas (tablets y móviles) */
+@media (max-width: 768px) {
+  .medicContainer {
+    flex-wrap: wrap; /* ahora sí se permite apilar */
+    justify-content: center;
+  }
+}
+
+/* Tablets */
+@media (max-width: 1024px) {
+  .medicContainer {
+    justify-content: space-around; /* reparte mejor los hijos */
+    gap: 15px;
+    padding: 15px 5%;
+  }
+}
+
+/* Móviles grandes */
+@media (max-width: 768px) {
+  .medicContainer {
+    justify-content: center;
+    gap: 12px;
+    padding: 12px 6%;
+  }
+}
+
+/* Móviles pequeños */
+@media (max-width: 480px) {
+  .medicContainer {
+    justify-content: center;
+    gap: 10px;
+    padding: 10px 4%;
+  }
+}
