@@ -146,6 +146,58 @@ footer{
     margin: 15px;
 }
 
+/* ===== ICONO HAMBURGUESA ===== */
+.menu-icon {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.menu-icon span {
+  width: 28px;
+  height: 3px;
+  background: #333; /* ajustá al color de tu navbar */
+  transition: 0.3s ease;
+}
+
+/* ===== MOBILE ===== */
+@media (max-width: 768px) {
+  nav {
+    padding: 10px 20px;
+  }
+
+  /* mostrar hamburguesa */
+  .menu-icon {
+    display: flex;
+  }
+
+  /* ocultar menu horizontal */
+  nav ul {
+    position: absolute;
+    top: 70px;
+    right: 0;
+    background: white;   /* poné el color que uses */
+    flex-direction: column;
+    gap: 25px;
+    width: 200px;
+    padding: 20px;
+    margin: 0;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    display: none;
+  }
+
+  /* mostrar cuando menuOpen = true */
+  nav ul.open {
+    display: flex;
+  }
+
+  nav ul li a {
+    font-size: 18px;
+  }
+}
+
+
 /* === RESPONSIVE === */
 @media (max-width: 1024px) {
     nav ul {

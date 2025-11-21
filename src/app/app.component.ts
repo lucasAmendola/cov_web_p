@@ -33,4 +33,10 @@ export class AppComponent {
       this.logoRef.nativeElement.classList.remove('logo-hovered');
     }
 
+    menuOpen = false;
+
+    toggleMenu() {
+      this.menuOpen = !this.menuOpen;
+}
+
 }

@@ -3,3 +3,18 @@
     flex-direction: column;
     justify-self: center;
 }
+
+/*MOBILE*/
+
+@media (max-width: 640px) {
+  p{
+    font-size: 14px;
+    display: flex;
+    width: 90%;
+  }
+
+  h1{
+    font-size: 24px;
+    text-align: center;
+  }
+}

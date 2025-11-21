@@ -81,3 +81,28 @@
     gap: 50px;
   }
 }
+
+/* === MOBILE: una card debajo de la otra === */
+@media (max-width: 640px) {
+
+  .cardsContainer {
+    display: flex;               /* cambiamos a flex para simplificar */
+    flex-direction: column;      /* apilar una debajo de la otra */
+     /* centrar */
+    gap: 1px;                  /* separacion mas chica */
+    max-width: 100%;
+  }
+
+  /* Ajustes visuales de cada card */
+  .cardsContainer .card {
+    width: 90%;                  /* reducir tamaño */
+    transform: scale(0.80);      /* achicar sutilmente */
+    transition: transform 0.3s ease;
+  }
+
+  .bgSection {
+    max-height: none;            /* evita recortes en mobile */
+    background-size: cover;
+    padding-bottom: 40px;
+  }
+}

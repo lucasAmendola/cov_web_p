@@ -1,21 +1,33 @@
 <nav [class.shadow]="isScrolled">
   <!-- Logo -->
-  <div >
-    <a class="logo" [routerLink] = "['/home']" (mouseenter)="onLogoHover()" (mouseleave)="onLogoLeave()" #logoRef>
-      <img class="logoImg" [src]="logo" alt="" srcset="">
+  <div>
+    <a class="logo" [routerLink]="['/home']" 
+       (mouseenter)="onLogoHover()" 
+       (mouseleave)="onLogoLeave()" 
+       #logoRef>
+      <img class="logoImg" [src]="logo" alt="">
     </a>
   </div>
+
+  <!-- Icono Hamburguesa -->
+  <div class="menu-icon" (click)="toggleMenu()">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
   <!-- Opciones -->
   <div>
-    <ul>
-      <li><a [routerLink] = "['/home']">Home</a></li>
-      <li><a [routerLink] = "['/familias']">Familias</a></li>
-      <li><a [routerLink] = "['/veterinarios']">Veterinarios</a></li>
-      <li><a [routerLink] = "['/equipo-medico']">Equipo médico</a></li>
+    <ul [class.open]="menuOpen">
+      <li><a [routerLink]="['/home']">Home</a></li>
+      <li><a [routerLink]="['/familias']">Familias</a></li>
+      <li><a [routerLink]="['/veterinarios']">Veterinarios</a></li>
+      <li><a [routerLink]="['/equipo-medico']">Equipo médico</a></li>
       <li><a href="#contact">Sacar turno</a></li>
     </ul>
   </div>
 </nav>
+
 
 <router-outlet></router-outlet>
 
