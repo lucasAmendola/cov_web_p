@@ -22,7 +22,7 @@
 }
 
 body{
-    margin: 20;
+    margin: auto;
 }
 
 h2, h3, h4{
@@ -166,6 +166,7 @@ footer{
   nav {
     padding: 10px 20px;
     max-width: 100%;
+    margin: auto;
   }
 
   /* mostrar hamburguesa */

@@ -34,3 +34,14 @@
 #formulario{
     background-color: #0658b1;
 }
+
+@media screen and (max-width: 768px) {
+    .teleconsulta-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .teleconsulta-link {
+        width: 80%;
+    }
+}
