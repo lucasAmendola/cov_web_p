@@ -110,3 +110,25 @@ h2 {
         max-width: 20%; /* 5 columnas en pantallas muy grandes */
     }
 }
+
+@media (max-width: 640px) {
+
+    .container {
+        padding: var(--spacing-sm);
+        max-width: fit-content;
+    }
+
+    .services img{
+        max-width: 320px;
+    }
+
+    h1{
+        font-size: 24px;
+        text-align: center;
+    }
+
+    h2{
+        font-size: 20px;
+        text-align: center;
+    }                       
+}

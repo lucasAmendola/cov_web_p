@@ -18,3 +18,10 @@
     background-position: center;
     padding-bottom: 2%; padding-top: 2%;
 }
+
+@media (max-width: 640px){
+
+    .homeBanner {
+        height: 200px;
+    }
+}

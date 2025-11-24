@@ -127,6 +127,11 @@ li {
     max-width: 100%;
   }
 
+  .section1 p{
+    font-size: 14px;
+    width: 90%;
+  }
+
   ul{
     font-size: 14px;
     text-align: left;

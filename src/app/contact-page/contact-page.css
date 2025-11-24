@@ -22,3 +22,18 @@
   justify-content: center;
 }
 
+@media (max-width: 640px){
+  .contact-page {
+    max-width: fit-content;
+    flex-direction: column;
+    padding-left: 5%;
+    padding-right: 5%;
+  }        
+  
+  .left,
+.right {
+  max-width: 80%;
+  align-content: center;
+  align-items: center;
+}
+}
