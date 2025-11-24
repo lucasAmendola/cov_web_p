@@ -20,6 +20,7 @@ h2 {
   flex-wrap: nowrap; /* por defecto, fila siempre */
   opacity: 0;
   transition: all 0.8s ease-out;
+  border-bottom: 3px solid #3ea3c8ac;
 }
 
 /* Desde la izquierda */
