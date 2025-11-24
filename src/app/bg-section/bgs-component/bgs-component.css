@@ -89,7 +89,7 @@
     display: flex;               /* cambiamos a flex para simplificar */
     flex-direction: column;      /* apilar una debajo de la otra */
     gap: 1%;                    /* separacion mas chica */
-    min-width: 600px;
+    min-width: fit-content;
     align-self: center;
     justify-self: center;
     align-content: center;           /* ancho maximo menor */
@@ -103,6 +103,7 @@
   }
 
   .bgSection {
+    max-width: fit-content;
     max-height: none;            /* evita recortes en mobile */
     background-size: cover;
     align-items: center;

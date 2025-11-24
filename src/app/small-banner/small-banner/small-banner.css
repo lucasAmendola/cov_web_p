@@ -105,3 +105,22 @@ body{
     right: 3%;
   }
 }
+
+/*MOBILE*/
+@media (max-width: 640px){
+  .smallBannerImg {
+    height: 120px;
+    margin-bottom: 10%;
+  }
+
+  .smContainer h1 {
+    font-size: 1.5rem;
+    top: 6%;
+    right: 2%;
+  }
+
+  .imgB {
+    height: 130%;
+    object-fit: cover;
+  }
+}
