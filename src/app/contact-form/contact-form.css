@@ -88,3 +88,13 @@ button:disabled {
     max-width: 90%; /* ocupa casi todo el ancho en mobile */
   }
 }
+
+@media (max-width: 640px) {
+  .contact-container {
+    padding: var(--spacing-sm);
+  }
+
+  input, select, button {
+    font-size: calc(var(--font-size-paragraph) * 0.9);
+  }
+}
