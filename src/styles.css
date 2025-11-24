@@ -187,11 +187,13 @@ footer{
     margin: 0;
     box-shadow: 0 4px 10px rgba(0,0,0,0.15);
     display: none;
+    z-index: 9;
   }
 
   /* mostrar cuando menuOpen = true */
   nav ul.open {
     display: flex;
+    border-bottom-left-radius: 10px;
   }
 
   nav ul li a {
@@ -265,4 +267,23 @@ footer{
 
 .section1 p{
     width: 50%;
+}
+
+/* === Overlay detrás del menú === */
+.menu-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,0.45); /* oscuridad suave */
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease;
+  z-index: 8; /* debe estar debajo del menú pero encima del contenido */
+}
+
+.menu-overlay.active {
+  opacity: 1;
+  visibility: visible;
 }
