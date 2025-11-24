@@ -105,4 +105,8 @@
     max-height: none;            /* evita recortes en mobile */
     background-size: cover;
   }
+
+  .card .deco{
+    display: none;               /* ocultar linea decorativa en mobile */
+  }
 }
