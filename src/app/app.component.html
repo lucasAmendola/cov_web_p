@@ -19,11 +19,11 @@
   <!-- Opciones -->
   <div>
     <ul [class.open]="menuOpen">
-      <li><a [routerLink]="['/home']">Home</a></li>
-      <li><a [routerLink]="['/familias']">Familias</a></li>
-      <li><a [routerLink]="['/veterinarios']">Veterinarios</a></li>
-      <li><a [routerLink]="['/equipo-medico']">Equipo médico</a></li>
-      <li><a href="#contact">Sacar turno</a></li>
+      <li><a (click)="closeMenu()" [routerLink]="['/home']">Home</a></li>
+      <li><a (click)="closeMenu()" [routerLink]="['/familias']">Familias</a></li>
+      <li><a (click)="closeMenu()" [routerLink]="['/veterinarios']">Veterinarios</a></li>
+      <li><a (click)="closeMenu()" [routerLink]="['/equipo-medico']">Equipo médico</a></li>
+      <li><a (click)="closeMenu()" href="#contact">Sacar turno</a></li>
     </ul>
   </div>
 </nav>
