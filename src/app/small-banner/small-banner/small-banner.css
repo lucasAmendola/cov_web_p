@@ -115,7 +115,7 @@ body{
 
   .smContainer h1 {
     font-size: 1.5rem;
-    top: 7%;
+    top: 10%;
     right: 2%;
     background: linear-gradient(90deg, #ffffff 29%, #ffffff 61%);
     -webkit-background-clip: text;  /* recorta el degradado al texto */
