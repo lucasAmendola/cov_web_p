@@ -117,7 +117,7 @@ body{
     font-size: 1.5rem;
     top: 10%;
     right: 2%;
-    background: linear-gradient(90deg, #ffffff 29%, #ffffff 61%);
+    background: linear-gradient(90deg, #37404e 29%, #242327 61%);
     -webkit-background-clip: text;  /* recorta el degradado al texto */
     -webkit-text-fill-color: transparent; /* hace el texto transparente */
     background-clip: text;
