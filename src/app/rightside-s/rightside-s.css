@@ -83,3 +83,14 @@
     gap: 40px;
   }
 }
+
+@media (max-width: 640px){
+  .orderContainer{
+    flex-direction: column;
+    width: fit-content;
+  }
+  .foto{
+    width: 90%;
+    height: fit-content;
+  }
+}

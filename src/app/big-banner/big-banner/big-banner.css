@@ -49,3 +49,12 @@
     max-height: 1100px;
   }
 }
+
+/* Mobile (hasta 768px) */
+@media screen and (max-width: 768px) {
+  .bigBanner {
+    height: 250px !important;
+    margin-bottom: 0% !important;
+    padding: 0% !important;
+  }
+}
