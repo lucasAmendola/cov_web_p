@@ -116,6 +116,7 @@ h2 {
     .container {
         padding: var(--spacing-sm);
         max-width: fit-content;
+        max-width: 90%;
     }
 
     .services img{
