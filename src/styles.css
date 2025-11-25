@@ -287,3 +287,10 @@ footer{
   opacity: 1;
   visibility: visible;
 }
+
+@media (max-width: 640px) {
+  p{
+    font-size: 16px !important;
+    line-height: 1.5 !important;
+  }
+}
