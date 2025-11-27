@@ -75,7 +75,7 @@
     height: fit-content;
   }
   .foto{
-    width: 40dvh;
+    width: 45dvh;
     height: auto;
   }
   .cardContainer{
@@ -87,6 +87,6 @@
     margin: auto;
   }
   .contenedor .decoTitle{
-    align-self: center;
+    justify-self: center !important;
   }
 }
