@@ -72,14 +72,21 @@
 @media (max-width: 640px){
   .imgContainer{
     flex-direction: column;
-    width: fit-content;
+    height: fit-content;
   }
   .foto{
-    width: 90%;
-    height: fit-content;
+    width: 40dvh;
+    height: auto;
   }
   .cardContainer{
     width: fit-content;
     margin: auto;
+  }
+  .contenedor{
+    width: fit-content;
+    margin: auto;
+  }
+  .contenedor .decoTitle{
+    align-self: center;
   }
 }
