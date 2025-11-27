@@ -84,7 +84,7 @@
     }
 }
 
-@media screen and (max-width: 740px) {
+@media screen and (max-width: 640px) {
   .bigBanner{
     height: 250px !important;
     margin-bottom: 0% !important;
@@ -93,6 +93,7 @@
 
   .bgSection {
     background-size: cover;
+    margin: auto;
     height: fit-content;
   }
 

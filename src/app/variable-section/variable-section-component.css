@@ -72,9 +72,14 @@
 @media (max-width: 640px){
   .imgContainer{
     flex-direction: column;
+    width: fit-content;
   }
   .foto{
     width: 90%;
     height: fit-content;
+  }
+  .cardContainer{
+    width: fit-content;
+    margin: auto;
   }
 }
