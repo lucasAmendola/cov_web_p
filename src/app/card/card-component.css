@@ -116,7 +116,6 @@
   }
 
   .card .deco{
-    width: clamp(80px, 20vw, 80px);
-    align-self: center !important;               /* ocultar linea decorativa en mobile */
+    display: none;               /* ocultar linea decorativa en mobile */
   }
 }
