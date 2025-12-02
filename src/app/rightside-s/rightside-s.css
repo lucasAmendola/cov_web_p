@@ -92,6 +92,10 @@
     margin-top: 5%;
   }
 
+  .contenedor .decoTitle{
+    display: none !important;
+  }
+
   .imgContainer{
     flex-direction: column;
     height: fit-content;
