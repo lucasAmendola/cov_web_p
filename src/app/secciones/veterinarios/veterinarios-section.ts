@@ -5,10 +5,11 @@ import { VariableSectionComponent } from '../../variable-section/variable-sectio
 import { RightsideS } from '../../rightside-s/rightside-s';
 import { SpecialSection2 } from '../../special-section-2/special-section-2';
 import { EspecialSection1 } from '../../especial-section-1/especial-section-1';
+import { SmallBanner } from '../../small-banner/small-banner/small-banner';
 
 @Component({
   selector: 'app-veterinarios-section',
-  imports: [BigBanner, SimplySection, VariableSectionComponent, RightsideS, SpecialSection2, EspecialSection1],
+  imports: [BigBanner, SimplySection, VariableSectionComponent, RightsideS, SpecialSection2, EspecialSection1, SmallBanner],
   templateUrl: './veterinarios-section.html',
   styleUrl: './veterinarios-section.css',
   standalone: true,

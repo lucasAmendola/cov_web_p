@@ -1,16 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
-body{
-    margin: auto;
-}
-
 .smallBannerImg{
     width: 100%;
-    height: 220px;
-}
+    height: 250px;
+    object-fit: cover;  }
 
 .imgB{
-    width: 100%;
+    width:100%;
+    height:100%;
+    object-fit: cover;
 }
 
 .smContainer h1{
