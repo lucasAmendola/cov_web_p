@@ -84,13 +84,21 @@
   }
 }
 
+/*MOBILE*/
 @media (max-width: 640px){
-  .orderContainer{
-    flex-direction: column;
-    width: fit-content;
+
+  .contenedor{
+    margin: 2%;
+    margin-top: 5%;
   }
-  .foto{
-    width: 90%;
+
+  .imgContainer{
+    flex-direction: column;
     height: fit-content;
   }
+
+  .orderContainer .imgContainer{
+   display: none;
+  }
+  
 }

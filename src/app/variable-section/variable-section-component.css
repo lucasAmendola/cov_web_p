@@ -69,6 +69,7 @@
   }
 }
 
+
 @media (max-width: 640px){
   .imgContainer{
     flex-direction: column;
@@ -83,10 +84,9 @@
     margin: auto;
   }
   .contenedor{
-    width: fit-content;
-    margin: auto;
+    margin: 2%;
   }
   .contenedor .decoTitle{
-    justify-self: center !important;
+    display: none;
   }
 }
