@@ -115,6 +115,13 @@ nav ul li a:hover{
     border-bottom: solid 1px #00668C;
 }
 
+nav ul li.active a {
+    color: #00668C;
+    font-weight: 600;
+    border-bottom: 2px solid #00668C;
+}
+
+
 footer{
     background-color: #3ea3c8ac;
     bottom: 0;
@@ -161,8 +168,34 @@ footer{
   transition: 0.3s ease;
 }
 
+nav .mediaIconNavContainer{
+  display: flex !important;
+  flex-direction: row;
+  margin-left:3%;
+  align-self: end;
+}
+
+nav .mediaIconNav {
+  width: 25px !important;
+  justify-self: center !important;
+  align-self: center !important;
+}
+
+nav .mediaIconNav:hover {
+   width: 28px !important;
+   img-src: url("/src/assets/icon/fc-icon-hover.gif");
+   transition: all 0.5s ease;
+   color: #00668C;
+}
+
+
 /* ===== MOBILE ===== */
 @media (max-width: 768px) {
+
+  nav .mediaIconNavContainer{
+    display: none !important;
+  }
+
   nav {
     padding: 10px 20px;
     max-width: 100%;

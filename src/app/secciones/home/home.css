@@ -25,3 +25,52 @@
         height: 200px;
     }
 }
+
+.teleconsulta-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1%;
+}
+
+.teleconsulta-link {
+    text-align: center;
+    background-color: #7ACBCF;
+    width: 17%;
+    justify-self: center;
+    border-radius: 10px;
+}
+.teleconsulta-link h2{
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    font-size: larger;
+}
+
+.teleconsulta-link h2:hover{
+    color: #000000;
+    text-decoration: none;
+}
+
+.teleconsulta-link a{
+    text-decoration: none;
+    color: white;
+} 
+
+#wsp{
+    background-color: #25D366;
+}
+#formulario{
+    background-color: #0658b1;
+}
+
+@media screen and (max-width: 768px) {
+    .teleconsulta-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .teleconsulta-link {
+        width: 80%;
+    }
+
+}

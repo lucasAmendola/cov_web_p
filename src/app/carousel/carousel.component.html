@@ -1,0 +1,27 @@
+<div class="carousel-container"
+     (mouseenter)="stopAutoSlide()"
+     (mouseleave)="startAutoSlide()">
+
+  <!-- Pista -->
+  <div class="carousel-track"
+       [style.transform]="'translateX(-' + currentIndex * 100 + '%)'">
+
+    <div class="carousel-item" *ngFor="let img of images">
+      <img [src]="img" alt="carousel image">
+    </div>
+
+  </div>
+
+  <!-- Controles -->
+  <button class="nav-btn prev" (click)="prev()">&#10094;</button>
+  <button class="nav-btn next" (click)="next()">&#10095;</button>
+
+  <!-- Indicadores -->
+  <div class="indicators">
+    <span *ngFor="let img of images; let i = index"
+          [class.active]="i === currentIndex"
+          (click)="goTo(i)">
+    </span>
+  </div>
+
+</div>

@@ -1,11 +1,50 @@
-<div class="homeBanner" style="margin-bottom: 2%;"></div>
+<app-carousel
+  [images]="[
+    '/assets/img/dog3-1010p.png',
+    '/assets/img/dog1-1010p.png',
+    '/assets/img/dog2-1010p.png'
+  ]"
+  [autoPlay]="true"
+  [interval]="3000"
+/>
 
-<app-simply-section title="Nuestra clínica" 
+
+<app-simply-section title="Quiénes  somos?" 
     paragraph="Unico consultoria dedicado de manera exclusiva al diagnóstico y tratamiento del cáncer en los animales de compañía."
     paragraph2="Nos especializamos en brindar atención médica personalizada y de alta calidad, acompañando a cada paciente
     y su familia en todo el proceso. Nuestro equipo trabaja con compromiso, empatía y tecnología de vanguardia para mejorar
     la calidad de vida de los animales que tratamos.">
 </app-simply-section>
+
+<app-simply-section id="teleconsulta" title="Telemedicina" 
+paragraph="El Servicio de Telemedicina,  no viene a reemplazar la atención presencial, sino que la complementa, 
+brindando a las familias de nuestros pacientes y sus clínicos derivantes, la posibilidad de realizar las consultas de orientación y seguimiento." 
+ 
+paragraph2="Como se realiza? Se accede una consulta oncológica de orientación y a partir de esta consulta, el especialista  evalúa la historia clínica y los 
+análisis realizados al paciente por su médico clínico. Del análisis de la información se ayuda en la toma de dicciones de tratamiento o bien de 
+recomendación de análisis o imágenes que ayuden a completar el diagnostico. El servicio telemedicina posee  una fuerte orientación a las interconsultas, 
+habituales cuando los pacientes requieren una segunda opinión.  "></app-simply-section>
+
+<app-simply-section title="¿Cómo solicitar una teleconsulta?" 
+paragraph="Podés comunicarte a través de nuestro formulario en línea o mediante el link directo a WhatsApp para coordinar el turno. 
+Nuestro equipo te confirmará la fecha y hora, y te enviará las indicaciones necesarias para la conexión. 
+También podes agendar una reunión virtual accediendo del siguiente link:">
+</app-simply-section>
+
+<div class="teleconsulta-container">
+    <div class="teleconsulta-link"><a href="https://calendly.com/lamendola-alumnos/30min"><h2>Agendar una teleconsulta</h2></a></div>
+    <div id="wsp" class="teleconsulta-link"><a href="https://wa.me/5492494250672"><h2>Link para WhatsApp</h2></a></div>
+    <div id="formulario" class="teleconsulta-link"><a href="#contact"><h2>Formulario en linea</h2></a></div>
+</div>
+
+
+<app-lis-section-component title="¿Qué necesitas para la teleconsulta?" 
+paragraph="Para que tu consulta sea fluida y provechosa, asegúrate de contar con:" 
+[items]="['Consulta previamente programada con nuestro equipo.', 
+'Dispositivo con cámara y micrófono, ya sea un celular (iOS o Android), Tablet o computadora de escritorio/portátil', 
+'Conexión a internet estable y de buena calidad para evitar interrupciones.', 
+'Espacio privado, tranquilo y bien iluminado para garantizar la comodidad durante la comunicación.']"> </app-lis-section-component>
+
 
 <app-servicios title="Ofrecemos lo mejor en medicina veterinaria" 
 img="/assets/img/cachorro.jpg" 
