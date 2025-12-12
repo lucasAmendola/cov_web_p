@@ -5,6 +5,7 @@
   margin: auto;
   overflow: hidden;
   border-radius: 12px;
+  z-index: 0;
 }
 
 .carousel-track {
