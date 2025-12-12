@@ -76,3 +76,35 @@
   width: 12px;
   height: 12px;
 }
+
+.scroll-indicator {
+  position: absolute;
+  bottom: 80px; /* Ajustá según tu diseño */
+  left: 50%;
+  transform: translateX(-50%);
+  cursor: pointer;
+  z-index: 20;
+}
+
+.scroll-indicator .arrow {
+  display: block;
+  width: 24px;
+  height: 24px;
+  border-bottom: 6px solid #83dcfc;
+  border-right: 6px solid #018cbe;
+  transform: rotate(45deg);
+  margin: 0 auto;
+
+  animation: bounce 1.4s infinite ease-in-out;
+}
+
+/* Animación */
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0) rotate(45deg);
+  }
+  50% {
+    transform: translateY(10px) rotate(45deg);
+  }
+}
+

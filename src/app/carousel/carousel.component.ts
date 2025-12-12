@@ -65,4 +65,11 @@ export class CarouselComponent implements OnInit {
     if (dist > 60) this.next();
     if (dist < -60) this.prev();
   }
+
+  scrollDown() {
+    window.scrollTo({
+      top: window.innerHeight * 0.9,
+      behavior: 'smooth'
+    });
+  } 
 }
