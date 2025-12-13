@@ -1,6 +1,16 @@
 <div class="contact-container">
   <h2>Contacte con nosotros</h2>
 
+  <!-- Mensaje de éxito -->
+  <div *ngIf="successMessage" class="alert success">
+    {{ successMessage }}
+  </div>
+
+  <!-- Mensaje de error -->
+  <div *ngIf="errorMessage" class="alert error">
+    {{ errorMessage }}
+  </div>
+
   <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
     <div class="form-group">
       <label for="nombre">Nombre *</label>
@@ -37,6 +47,9 @@
       </select>
     </div>
 
-    <button type="submit" [disabled]="contactForm.invalid">Enviar</button>
+    <button type="submit" [disabled]="contactForm.invalid || sending">
+      <span *ngIf="!sending">Enviar</span>
+      <span *ngIf="sending" class="spinner"></span>
+    </button>
   </form>
 </div>

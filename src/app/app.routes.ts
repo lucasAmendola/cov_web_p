@@ -1,4 +1,4 @@
-import { Routes } from '@angular/router';
+import {Routes} from '@angular/router';
 import { Home } from './secciones/home/home';
 import { FamiliasSection } from './secciones/familias/familias-section';
 import { VeterinariosSection } from './secciones/veterinarios/veterinarios-section';
@@ -27,3 +27,6 @@ export const routes: Routes = [
         component: EquipoMedicoComponent
     },
 ];
+
+
+

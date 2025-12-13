@@ -48,6 +48,47 @@ button:disabled {
   font-size: 12px;
 }
 
+.alert {
+  padding: 12px 18px;
+  border-radius: 6px;
+  margin-bottom: 12px;
+  font-size: 0.95rem;
+  animation: fadeIn 0.3s ease;
+}
+
+.alert.success {
+  background: #d1f8d1;
+  color: #155d15;
+  border-left: 4px solid #1fa41f;
+}
+
+.alert.error {
+  background: #ffd2d2;
+  color: #8b1a1a;
+  border-left: 4px solid #e53e3e;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-5px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Spinner */
+.spinner {
+  width: 18px;
+  height: 18px;
+  border: 3px solid #ffffff55;
+  border-top-color: white;
+  border-radius: 50%;
+  display: inline-block;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+
 /* Laptops chicas (901px – 1280px) */
 @media screen and (min-width: 901px) and (max-width: 1280px) {
   .contact-container {
