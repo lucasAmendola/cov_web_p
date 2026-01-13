@@ -279,6 +279,14 @@ nav .mediaIconNav:hover {
     nav ul li a {
         font-size: 14px;
     }
+
+    h1{
+        font-size: 2rem;
+    }
+
+    p{
+        font-size: 16px;
+    }
 }
 
 @media (max-width: 768px) {
